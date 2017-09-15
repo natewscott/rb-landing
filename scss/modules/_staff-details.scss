@@ -1,0 +1,56 @@
+.staff {
+	@include full;
+	// margin: 0 10%;
+}
+#sm-staff {
+		display: block;
+		max-width: 1380px;
+		margin: 0 5%;
+		@include breakpoint($medium) {
+			display: none;
+		}
+}
+#md-staff {
+	display:none;
+	@include breakpoint($medium) {
+		@include display-flex;
+		@include justify-content(space-around);
+		@include flex-wrap(wrap);
+	}
+}
+.staff-details {
+	figure {
+		@include display-flex;
+		@include flex-direction(column);
+		@include align-items(center);
+		@include breakpoint($medium) {
+			width: 15%;
+		}
+
+		img{
+			width: 150px;
+			height: 180px;
+			// margin: 0 auto;
+		}
+	}
+
+	h1, h2 {
+		color:$primary;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	h1 {
+		@include responsive-typography(20px, 27px, false);
+    	line-height: 1.4;
+	}
+	h2 {
+		@include responsive-typography(19px, 23px, false);
+    	line-height: 1.4;
+	}
+	ul {
+		li {
+			text-align: center;
+		}
+	}
+
+}

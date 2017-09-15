@@ -1,0 +1,68 @@
+.training-details {
+  @include full;
+  .info {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 5% 0;
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include breakpoint($medium) {
+    @include flex-direction(row);
+
+      }
+
+        .info-text {
+          margin: 0 5%;
+          max-width: 780px;
+          @include breakpoint($medium) {
+            margin: 0;
+            margin-right: 5%;
+          }
+             h1,h2 {
+                text-transform: uppercase;
+                }
+                h1 {
+                  @include responsive-typography(28px, 38px, false);
+                  // color: $primary;
+                  line-height: 1.25;
+                  margin-bottom: 3%;
+                    @include breakpoint($medium) {
+                    margin-bottom: 0;
+                  }
+                }
+                h2 {
+                  @include responsive-typography(22px, 26px, false);
+             }
+        }
+
+        .info-images {
+          @include display-flex;
+          @include flex-direction(column);
+        }
+
+        img {
+          margin-bottom: 2%;
+          padding-right:0;
+          @include breakpoint($medium) {
+            padding-right: 5%;
+          }
+        }
+        .topic {
+          text-align: center;
+          @include breakpoint($medium) {
+            text-align: left;
+          }
+          ul {
+            text-align: center;
+            float:none;
+            padding-right: 0;
+            @include breakpoint($medium) {
+              text-align:left;
+              float:left;
+              padding-right:15%;
+            }
+          }
+        }
+      }  
+  }

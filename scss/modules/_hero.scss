@@ -1,0 +1,124 @@
+#small-diameter {
+    background-image: url("../img/hero/small-diameter-training-small.jpg");
+    background-position:top;
+    @include breakpoint ($large) {
+	   background-image: url("../img/hero/small-diameter-training-1.jpg");
+    }
+	background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}
+
+#footer-hero-small {
+    @include full;
+    background-image: url("../img/hero/small-diameter-training-9-small.jpg");
+    @include breakpoint($large) {
+	   background-image: url("../img/hero/small-diameter-training-9.jpg");
+    }
+	background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}
+#medium-diameter {
+    background-image: url("../img/hero/Medium Diameter Training-9.jpg");
+    background-position:top;
+    @include breakpoint ($large) {
+       background-image: url("../img/hero/Medium Diameter Training-9.jpg");
+    }
+    background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}
+
+#footer-hero-medium {
+    @include full;
+    background-image: url("../img/hero/Medium Diameter Training-8.jpg");
+    @include breakpoint($large) {
+       background-image: url("../img/hero/Medium Diameter Training-8.jpg");
+    }
+    background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}
+
+#fusion-branch {
+    background-image: url("../img/hero/rb-fusion-2.jpg");
+    background-position:top;
+    @include breakpoint ($large) {
+       background-image: url("../img/hero/rb-fusion-2.jpg");
+    }
+    background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}
+#footer-hero-fusion {
+    @include full;
+    background-image: url("../img/product/hdpe-pipe.jpg");;
+    @include breakpoint($large) {
+       background-image: url("../img/product/hdpe-pipe.jpg");;
+    }
+    background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}
+
+#emergency {
+    background-image: url("../img/hero/emergency-hero.jpg");
+    background-position:top;
+    @include breakpoint ($large) {
+       background-image: url("../img/hero/emergency-hero.jpg");
+    }
+    background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 100vh;
+}
+#footer-emergency {
+    @include full;
+    background-image: url("../img/hero/emergency-hero.jpg");;
+    @include breakpoint($large) {
+       background-image: url("../img/hero/emergency-hero.jpg");;
+    }
+    background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}
+#agri {
+    background-image: url("../img/hero/agri-sm.jpg");
+    background-position:top;
+    @include breakpoint ($large) {
+       background-image: url("../img/hero/agri.jpg");
+    }
+    background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 100vh;
+}
+#footer-ag {
+    @include full;
+    background-image: url("../img/hero/central-valley-ag-sm.jpg");
+    @include breakpoint($large) {
+       background-image: url("../img/hero/central-valley-ag.jpg");
+    }
+    background-repeat: no-repeat;
+    background-position: 0;
+    @include background-size(cover);
+    width: 100%;
+    height: 75vh;
+}

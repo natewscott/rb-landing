@@ -1,0 +1,59 @@
+.benifits,
+.products {
+    @include full;
+    color: $primary;
+    background-color: tint(black,90%);
+  
+  h1 {
+    font-family: $sans-regular;
+    // font-weight: 300;
+    text-transform: uppercase;
+    @include responsive-typography(32px, 48px, false);
+    padding-top: 3%;
+    text-align: center
+  }
+
+  .benifits-info {
+    @include display-flex;
+    @include flex-direction(column);
+    padding: 0 5% 5% 5%;
+    margin-bottom: 20%;
+
+    @include breakpoint($medium) {
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      margin-bottom: 0;
+    }
+    article {
+      @include display-flex;
+      @include flex-direction(column);
+      @include flex(1);
+      // @include justify-content(space-between);
+      @include align-items(center);
+	   margin: 0 5% 5% 0;
+     &:nth-child(3) {
+     	margin-right: 0;
+     } 
+    }
+    h2  {
+      font-family: $sans-regular;
+      text-align: center;
+      @include responsive-typography(21px, 28px, false);
+      line-height: 1.25;
+      text-transform: uppercase;
+      text-align: center;
+      padding:5% 0;
+      margin: 0;
+      // @include breakpoint($medium) {
+      //   text-align: left;
+      // }
+    }
+    p {
+      @include responsive-typography(20px, 23px, false);
+      font-weight: 100;
+      margin: 0;
+      color: black;
+    }
+
+  }
+}

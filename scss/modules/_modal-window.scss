@@ -1,0 +1,229 @@
+button {
+  cursor: pointer;
+  outline: 0;
+}
+
+.btn {
+  background-color: $tertiary;
+  border: 0;
+  border-radius: 3px;
+  color: #2893ce;
+  display: inline-block;
+  font: inherit;
+  opacity: 1;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color:white;
+  -webkit-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+.btn:hover {
+  background-color:lighten($tertiary,20%);
+}
+
+.btn--intro {
+  margin: 0;
+}
+
+.btn--modal {
+  background-color: #2893ce;
+  color: #fff;
+  // width: 100%;
+}
+
+.cover {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: visibility 0s linear 0.2s, opacity 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.modal {
+  bottom: 0;
+  color: #3b3b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  padding: 40px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.9) translate3d(0, -50px, 0);
+          transform: scale(0.9) translate3d(0, -50px, 0);
+  -webkit-transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out;
+  transition: visibility 0s linear 0.2s, opacity 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  visibility: hidden;
+  z-index: 2;
+
+  form {
+    margin-top: 6%;
+  }
+}
+
+.modal[data-state='open'] {
+  opacity: 1;
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  visibility: visible;
+}
+.modal[data-state='open'] ~ .cover {
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  visibility: visible;
+}
+
+.modal__window {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  margin: 5%;
+  @include breakpoint($medium) {
+    margin: auto;
+  }
+  overflow: auto;
+  padding: 1rem;
+  position: relative;
+  width: 450px;
+}
+
+
+
+.modal__close {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC40MTQgN2w0Ljk1LTQuOTVMMTEuOTQ4LjYzOCA3IDUuNTg3IDIuMDUuNjM2LjYzOCAyLjA1IDUuNTg3IDdsLTQuOTUgNC45NSAxLjQxNCAxLjQxM0w3IDguNDEzbDQuOTUgNC45NSAxLjQxMy0xLjQxNEw4LjQxMyA3eiIgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+) no-repeat center center;
+  border: 0;
+  height: 20px;
+  line-height: 20px;
+  opacity: .3;
+  position: absolute;
+  right: 1rem;
+  text-indent: -9999px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  width: 1rem;
+}
+.modal__close:hover {
+  opacity: .6;
+}
+
+.modal__title {
+  font-size: 1.5rem;
+  margin: .5rem 0;
+}
+
+.modal__image {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+
+  .modal {
+    padding: 20px;
+  }
+}
+button {
+  display: block;
+  width: auto;
+  margin: 2%;
+  background: transparent;
+  border: 2px solid #444;
+  padding: 5px 10px;
+}
+button.md-close {
+  margin-top: 40px;
+}
+
+.md-modal {
+  margin: auto;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  width: 50%;
+  color: white;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.md-modal .primary {
+  background:$secondary;
+  &:hover {
+    background:lighten($secondary,10%);
+  }
+}
+.md-modal select {
+  color:black;
+}
+
+.md-show {
+  visibility: visible;
+}
+
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(228, 240, 227, 0.8);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.md-effect-12 .md-content {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-12 ~ .md-overlay {
+  background-color: rgba($primary,.85);
+}
+
+.md-effect-12 .md-content h3,
+.md-effect-12 .md-content {
+  background: transparent;
+}
+
+.md-show.md-effect-12 .md-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}

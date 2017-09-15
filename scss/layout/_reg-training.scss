@@ -1,0 +1,30 @@
+.landing {
+
+  #fusion-products {
+    max-width: 1380px;
+    margin: 0 auto;
+  }
+
+.section-title {
+    color: $primary;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+#custom-course {
+    text-align: center;
+}
+
+}
+#thank-you {
+    article {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding:5% 10%;
+      text-align: center;
+
+      h1 {
+        font-size: 4rem;
+      }
+    }
+}

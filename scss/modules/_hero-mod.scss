@@ -1,0 +1,46 @@
+.hero {
+		article {
+      		// max-width: 900px;
+      			padding: 45% 0 0 5%;
+      			@include breakpoint($large) {
+					padding: 10% 0 0 5%;
+				}
+		}
+		h1,h2 {
+			font-family: $sans-regular;
+			font-weight: 700;
+			color: white;
+			text-transform: uppercase;
+		}
+		h1 {
+			@include responsive-typography(40px, 80px, false);
+			line-height: .85;
+			margin-bottom: 0;
+		}
+		h2 {
+			@include responsive-typography(26px, 50px, false);
+		}
+	}
+	#fusion-branch {
+		h1, h2 {
+			color:white;
+		}
+		h1 {
+			@include responsive-typography(38px, 120px, false);
+			line-height: .85;
+			margin-bottom: 0;
+		}
+		h2 {
+			@include responsive-typography(26px, 48px, false);
+		}
+	}
+  // section {
+  //   @include full;
+  // }
+  .footer-hero {
+    article {
+      text-align: right;
+      float:right;
+      padding: 10% 5% 0 0;
+    }
+  }

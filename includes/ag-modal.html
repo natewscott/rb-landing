@@ -1,0 +1,56 @@
+<!--Introduction-->
+<div class="intro">
+  <button class="btn btn--intro" data-toggle="true">Request a Quote</button>
+</div>
+<!--Modal Window-->
+<div class="modal" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+  <div class="modal__window">
+    <button class="modal__close" data-toggle="true">Close</button>
+    <form action="https://formspree.io/nate@natescottdesign.com" method="POST">
+      
+      <div class="formrow">
+        <div class="formitem col1of2">
+          <label class="label req" for="firstname">First name</label>
+          <input type="text" name="firstname" id="firstname"  required="required" x-autocompletetype="given-name"/>
+        </div>
+        <div class="formitem col1of2">
+          <label class="label req" for="firstname">Last name</label>
+          <input type="text" name="lastname" id="lastname"  required="required" x-autocompletetype="family-name"/>
+        </div>
+      </div>
+       <div class="formrow">
+        <div class="formitem col1of2">
+          <label class="label req" for="phone">Phone</label>
+          <input type="phone" name="phone" id="phone" required="required"  x-autocompletetype="phone"/>
+        </div>
+        <div class="formitem col1of2">
+          <label class="label req" for="email">Email</label>
+          <input type="email" name="_replyto" id="email" required="required" x-autocompletetype="email"/>
+        </div>
+       <div class="formrow">
+        <div class="formitem col1of2">
+          <label class="label" for="city">City</label>
+          <input type="text" name="city" id="city"  x-autocompletetype="city"/>
+        </div>
+      </div>
+         <div class="formrow">
+      <div class="formitem">
+        <label class="label req" for="message">Message</label>
+        <textarea name="message" id="message" cols="40" rows="5" required="required"></textarea>
+      </div>
+    </div>
+        <input type="hidden" name="_subject" value="Small Diameter Sign Up" />
+      </div>
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="hidden" name="_next" value="thank-you-small.html" />
+      <div class="buttons">
+        <div class="forth">
+          <button class="primary button" type="submit" value="send">Submit</button>
+        </div>
+        
+      </div>
+    </form>
+  </div>
+</div>
+<!--Semi-transparent Cover-->
+<div class="cover"></div>

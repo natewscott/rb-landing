@@ -1,0 +1,94 @@
+ body, html {
+  @include full;
+  height: auto;
+  padding:0;
+  font-family: $sans-serif;
+  font-weight: 100;
+  background-color: #eee;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ img {
+  width: 100%;
+  height: auto;
+ }
+ ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ }
+   a {
+    color: $link;
+    text-decoration: none;
+    // &:hover {
+    //   color: $hover;
+    // }
+  }
+
+.page-wrap {
+   // @include container;
+   @include full;
+}
+
+.main-content {
+  @include full;
+}
+
+.body-text,
+#landing-cards {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left:5%;
+  padding-right: 5%;
+}
+
+.body-text {
+  @include display-flex;
+  @include flex-direction(column-reverse);
+  @include breakpoint($large) {
+    @include flex-direction(row);
+    @include justify-content(space-between);
+  }
+
+  article {
+    width: 100%;
+    @include breakpoint($large) {
+      max-width: 800px;
+    }
+  }
+  aside {
+    margin-top: 1.75%;
+    @include display-flex;
+    @include flex-direction(row);
+    @include breakpoint($large) {
+      @include flex-direction(column);
+    }
+
+    img {
+      max-height: 100px;
+      @include breakpoint($large) {
+        max-height: 175px;
+      }
+    }
+    .aside-icon {
+      height: 90px;
+      @include breakpoint($large) {
+        max-height: 145px;
+      }
+    }
+  }
+}
+
+#landing-cards {
+  padding-left: 1.25%;
+  padding-right: 1.25%;
+}
+
+.footer-hero {
+  margin-top: 5%;
+}
+
