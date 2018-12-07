@@ -3731,3 +3731,13 @@ button.md-close {
 #thank-you article h1 {
   font-size: 4rem;
 }
+
+/* line 1, ../../scss/layout/_fusion.scss */
+.products {
+  padding-bottom: 10%;
+}
+
+/* line 5, ../../scss/layout/_fusion.scss */
+#footer-hero-fusion {
+  margin-top: 0;
+}
