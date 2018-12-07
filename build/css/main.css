@@ -2237,20 +2237,15 @@ h1.card-title {
 /* Card Images */
 /* line 2, ../../scss/modules/_card-images.scss */
 .card-image-hdpe-pipe {
-  background-image: url("../img/product/hdpe-pipe.jpg");
+  background-image: url("../img/product/hdpe-fitting.jpg");
 }
 
-/* line 5, ../../scss/modules/_card-images.scss */
-.card-image-mdpe {
-  background-image: url("../img/product/mdpe-pipe.jpg");
-}
-
-/* line 8, ../../scss/modules/_card-images.scss */
+/* line 6, ../../scss/modules/_card-images.scss */
 .card-image-equip {
   background-image: url("../img/product/BeadTrimmer_8-24inch.png");
 }
 
-/* line 11, ../../scss/modules/_card-images.scss */
+/* line 10, ../../scss/modules/_card-images.scss */
 .card-image-fusion {
   background-image: url("../img/product/rentals.jpg");
 }
@@ -2260,42 +2255,42 @@ h1.card-title {
   background-image: url("../img/training/Medium Diameter Training-2.jpg");
 }
 
-/* line 17, ../../scss/modules/_card-images.scss */
+/* line 18, ../../scss/modules/_card-images.scss */
 .card-image-service {
   background-image: url("../img/product/tech.jpg");
 }
 
-/* line 20, ../../scss/modules/_card-images.scss */
+/* line 22, ../../scss/modules/_card-images.scss */
 .card-image-small-diameter {
   background-image: url("../img/training/small diameter training-3.jpg");
 }
 
-/* line 23, ../../scss/modules/_card-images.scss */
+/* line 26, ../../scss/modules/_card-images.scss */
 .card-image-medium-diameter {
   background-image: url("../img/training/Medium Diameter Training-10.jpg");
 }
 
-/* line 26, ../../scss/modules/_card-images.scss */
+/* line 30, ../../scss/modules/_card-images.scss */
 .card-image-large-diameter {
   background-image: url("../img/training/large-diameter.jpg");
 }
 
-/* line 29, ../../scss/modules/_card-images.scss */
+/* line 34, ../../scss/modules/_card-images.scss */
 .card-image-fusion-inspection {
   background-image: url("../img/training/Medium Diameter Training-5.jpg");
 }
 
-/* line 32, ../../scss/modules/_card-images.scss */
+/* line 38, ../../scss/modules/_card-images.scss */
 .card-image-agri-pump {
   background-image: url("../img/product/agriculture/agri-pump.jpg");
 }
 
-/* line 35, ../../scss/modules/_card-images.scss */
+/* line 42, ../../scss/modules/_card-images.scss */
 .card-image-agri-pipe {
   background-image: url("../img/product/agriculture/agri-piping.jpg");
 }
 
-/* line 38, ../../scss/modules/_card-images.scss */
+/* line 46, ../../scss/modules/_card-images.scss */
 .card-image-agri-drain {
   background-image: url("../img/product/agriculture/drain-pipe.jpg");
 }
