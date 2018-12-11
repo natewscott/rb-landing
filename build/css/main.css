@@ -2983,9 +2983,7 @@ button.md-close {
 
 /* line 52, ../../scss/modules/_hero-mod.scss */
 .footer-hero article {
-  text-align: right;
-  float: right;
-  padding: 10% 5% 0 0;
+  padding: 5% 0 0 5%;
 }
 
 /* line 1, ../../scss/modules/_benifits-mod.scss */
