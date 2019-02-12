@@ -31,4 +31,8 @@
 
     @include display-flex;
     @include justify-content(center);
+
+    .fusion-logo {
+        max-width: 75%;
+    }
 }

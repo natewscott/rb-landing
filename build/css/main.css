@@ -3699,6 +3699,10 @@ button.md-close {
   -webkit-justify-content: center;
   justify-content: center;
 }
+/* line 35, ../../scss/layout/_home.scss */
+.inner-logo .fusion-logo {
+  max-width: 75%;
+}
 
 /* line 3, ../../scss/layout/_reg-training.scss */
 .landing #fusion-products {
